@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorTitleText"
+                android:text="@string/pay_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ui.widget.TextEditTextView
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:id="@+id/name"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical"
+                android:textColorHint="@color/colorEditHint"
+                android:hint="@string/pay_name_hint"
+                android:layout_marginLeft="24dp"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:background="@color/colorview"
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"></View>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorTitleText"
+                android:text="@string/pay_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ui.widget.TextEditTextView
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/number"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textColorHint="@color/colorEditHint"
+                android:hint="@string/pay_number_hint"
+                android:layout_marginLeft="24dp"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/pay_code_tv"
+        android:textColor="@color/colorEditHint"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/add_code"
+            android:background="@mipmap/mipmap_add"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+    <Button
+        android:id="@+id/finish"
+        android:background="#B3BAC9"
+        android:padding="8dp"
+        android:textColor="#ffffff"
+        android:text="@string/pay_finish"
+        android:textSize="18sp"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

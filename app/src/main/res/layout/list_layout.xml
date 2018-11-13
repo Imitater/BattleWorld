@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/adapter_item">
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:background="@color/colorsell"
+            android:layout_width="5dp"
+            android:layout_height="21dp" />
+        <TextView
+            android:id="@+id/type"
+            android:layout_marginLeft="11dp"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:text="USDT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/time"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:textSize="12sp"
+            android:text="2018-08-10 10:33:17"
+            android:textColor="@color/colortvmore"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/state"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/color_tab"
+            android:text="交易成功"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/shallow"
+            android:textSize="16sp"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/colortvshallow"
+            android:text="6.91"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/count"
+            android:textColor="@color/colortvshallow"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:text="8000.8"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/colortvshallow"
+            android:textSize="16sp"
+            android:text="55285.53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/Transaction"
+            android:textSize="12sp"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/colortvmore"
+            android:text="CNY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/colortvmore"
+            android:gravity="center_horizontal"
+            android:textSize="12sp"
+            android:text="数量"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginRight="16dp"
+            android:textColor="@color/colortvmore"
+            android:textSize="12sp"
+            android:text="交易金额"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

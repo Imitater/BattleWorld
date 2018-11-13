@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:elevation="4dp">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp"></View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:elevation="2dp">
+
+        <View
+            android:id="@+id/order_back"
+            style="@style/ActionBarViewStyle" />
+
+        <TextView
+            android:id="@+id/order_title"
+            style="@style/ActionBarTitleStyle"
+            android:text="订单详情" />
+
+        <Button
+            android:id="@+id/order_service"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@mipmap/mipmap_talk" />
+    </RelativeLayout>
+</LinearLayout>

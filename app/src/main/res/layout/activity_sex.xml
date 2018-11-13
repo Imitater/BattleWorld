@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:rgb="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ui.widget.MyActionBar
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:id="@+id/sex_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ui.widget.MyActionBar>
+
+   <LinearLayout
+       android:layout_marginTop="8dp"
+       android:background="@color/colorPrimary"
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="wrap_content">
+
+      <ui.widget.CustomCheckBox
+          rgb:ctext_size="16"
+          android:id="@+id/sex_box1"
+          android:layout_marginRight="8dp"
+          android:padding="10dp"
+          android:layout_marginLeft="6dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          rgb:ctext= "@string/sex_man"
+          rgb:spacing= "11dp"></ui.widget.CustomCheckBox>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:background="@color/colorview"></View>
+
+        <ui.widget.CustomCheckBox
+            rgb:ctext_size="16"
+            android:id="@+id/sex_box2"
+            android:layout_marginRight="8dp"
+            android:padding="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            rgb:ctext= "@string/sex_woman"
+            rgb:spacing= "11dp"></ui.widget.CustomCheckBox>
+   </LinearLayout>
+</LinearLayout>

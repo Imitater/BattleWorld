@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+    <TextView
+        android:id="@+id/node_adapter_nickname"
+        android:textColor="@color/colorTitleText"
+        android:layout_marginLeft="16dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textSize="14sp"
+        android:text="测试测试"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_marginLeft="16dp"
+        android:background="@color/colorview"
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"/>
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/mipmap_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        android:elevation="1dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/addressTextStyle"
+                android:text="@string/addaddress_people" />
+
+            <ui.widget.TextEditTextView
+                android:imeOptions="actionDone"
+                android:id="@+id/add_name"
+                style="@style/addressEditTextStyle"
+                android:hint="@string/addaddress_name" />
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@mipmap/mipmap_number"
+                android:scaleX="0.6"
+                android:scaleY="0.6" />
+        </LinearLayout>
+
+        <View style="@style/addressViewStyle"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/addressTextStyle"
+                android:text="@string/addaddress_number" />
+
+            <ui.widget.TextEditTextView
+                android:imeOptions="actionDone"
+                android:id="@+id/add_number"
+                style="@style/addressEditTextStyle"
+                android:hint="@string/addaddress_number_hint" />
+        </LinearLayout>
+
+        <View style="@style/addressViewStyle"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/addressTextStyle"
+                android:text="@string/addaddress_location" />
+
+            <TextView
+                android:id="@+id/add_city"
+                android:layout_marginLeft="8dp"
+                style="@style/addressEditTextStyle"
+                android:hint="@string/addaddress_location_hint" />
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@mipmap/mipmap_location"
+                android:scaleX="0.6"
+                android:scaleY="0.6" />
+        </LinearLayout>
+
+        <View style="@style/addressViewStyle"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/addressTextStyle"
+                android:text="@string/addaddress_address" />
+
+            <ui.widget.TextEditTextView
+                android:imeOptions="actionDone"
+                android:id="@+id/add_address"
+                style="@style/addressEditTextStyle"
+                android:layout_marginLeft="8dp"
+                android:hint="@string/addaddress_address_hint"
+               />
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:background="@color/colorFinishButton"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/add_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/addaddress_finish"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+</LinearLayout>
+</LinearLayout>

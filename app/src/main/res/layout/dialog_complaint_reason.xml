@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_unpay"
+        style="@style/alertDialogTextStyle"
+        android:text="对方未付款" />
+
+    <TextView
+        android:layout_marginTop="1dp"
+        android:id="@+id/dialog_unrelease"
+        style="@style/alertDialogTextStyle"
+        android:text="对方未放行" />
+    <TextView
+        android:layout_marginTop="1dp"
+        android:id="@+id/dialog_unanswer"
+        style="@style/alertDialogTextStyle"
+        android:text="对方无应答" />
+    <TextView
+        android:layout_marginTop="1dp"
+        android:id="@+id/dialog_fraud"
+        style="@style/alertDialogTextStyle"
+        android:text="对方有欺诈行为" />
+    <TextView
+        android:layout_marginTop="1dp"
+        android:id="@+id/dialog_another"
+        style="@style/alertDialogTextStyle"
+        android:text="其他" />
+
+    <TextView
+        android:textColor="@color/colorText"
+        android:layout_marginTop="10dp"
+        android:id="@+id/dialog_close"
+        style="@style/alertDialogTextStyle"
+        android:text="取消" />
+</LinearLayout>

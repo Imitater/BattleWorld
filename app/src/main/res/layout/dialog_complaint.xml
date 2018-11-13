@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+    <TextView
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textColor="#0A1F37"
+        android:text="申请客诉确认？"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="11dp"
+        android:gravity="center_horizontal"
+        android:textColor="#8e0a1f37"
+        android:text="请确认您没有收到汇款要申请客诉"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="#8e0a1f37"
+        android:text="申请客诉后订单将会冻结，"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="#8e0a1f37"
+        android:text="客服将会联系交易双方处理订单。"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:background="#8d0a1f37"
+        ></View>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/dialog_complaint_cancel"
+            android:textSize="16sp"
+            android:text="取消"
+            android:textColor="#B3BAC9"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+        <View
+            android:background="#8d0a1f37"
+            android:layout_width="0.25dp"
+            android:layout_height="50dp"></View>
+        <Button
+            android:id="@+id/dialog_complaint_finish"
+            android:textColor="@color/colorButtomTab"
+            android:text="确认申请"
+            android:textSize="16sp"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+</LinearLayout>

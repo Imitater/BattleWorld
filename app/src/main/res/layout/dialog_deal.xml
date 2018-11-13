@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/deal_dialog_cardview"
+    android:elevation="8dp"
+    app:cardCornerRadius="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:paddingTop="9dp">
+
+            <Button
+                android:id="@+id/dialog_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@mipmap/mipmap_close" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dialog_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="测试"
+                    android:textColor="@color/colorButtomTab"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/dialog_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="单价 ¥47,850.00"
+                    android:textColor="@color/colorEditHint"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/head"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp">
+
+                    <ImageView
+                        android:id="@+id/dialog_head"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:background="@drawable/circle_shape_select" />
+
+                    <TextView
+                        android:id="@+id/dialog_head_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="测"
+                        android:textColor="@color/write"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/dialog_circle"
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/head_selector" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/dialog_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_toRightOf="@id/head"
+                    android:text="测试"
+                    android:textColor="@color/write"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:background="@mipmap/mipmap_card" />
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@mipmap/mipmap_alipay" />
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@mipmap/mipmap_weixing" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/dialog_deal_count"
+                    style="@style/DialogDealTvStyle"
+                    android:text="572" />
+
+                <TextView
+                    style="@style/DialogCountTvStyle"
+                    android:layout_toRightOf="@id/dialog_deal_count"
+                    android:text="交易单" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/dialog_rate_count"
+                        style="@style/DialogDealTvStyle"
+                        android:layout_marginLeft="0dp"
+                        android:text="80%" />
+
+                    <TextView
+                        style="@style/DialogCountTvStyle"
+                        android:text="成交率" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dialog_time_tv"
+                    style="@style/DialogCountTvStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:text="放币时效" />
+
+                <TextView
+                    android:id="@+id/dialog_time"
+                    style="@style/DialogDealTvStyle"
+                    android:layout_toLeftOf="@id/dialog_time_tv"
+                    android:text="1′57″" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="13dp"
+                android:text="金额(CNY)"
+                android:textColor="@color/write"
+                android:textSize="16sp" />
+
+            <ui.widget.TextEditTextView
+                 android:imeOptions="actionDone"
+                android:id="@+id/dialog_money_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="交易限额400-2,468.22"
+                android:singleLine="true"
+                android:textColor="@color/write"
+                android:textColorHint="@color/colorEditHint"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:background="#59ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="16dp"
+                android:text="全部输入"
+                android:textColor="@color/color_tab"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialog_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="13dp"
+                android:text="数量(BTC)"
+                android:textColor="@color/write"
+                android:textSize="16sp" />
+
+            <ui.widget.TextEditTextView
+                android:imeOptions="actionDone"
+                android:id="@+id/dialog_count_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="请输入购买数量"
+                android:singleLine="true"
+                android:textColor="@color/write"
+                android:textColorHint="@color/colorEditHint"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:background="#59ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="16dp"
+                android:text="全部输入"
+                android:textColor="@color/color_tab"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/dialog_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorEditHint"
+        android:text="买入"
+        android:textColor="@color/write"
+        android:textSize="18sp" />
+    </LinearLayout>
+ </android.support.v7.widget.CardView>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/mipmap_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/actionbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/PayImageStyle"
+                    android:background="@mipmap/mipmap_card" />
+
+                <TextView
+                    android:id="@+id/pay_card"
+                    style="@style/PayTextStyle"
+                    android:text="@string/payway_card" />
+
+                <ImageView
+                    android:id="@+id/pay_card_next"
+                    style="@style/PayNextStyle" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:layout_marginLeft="48dp"
+                android:background="@color/colorview"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <ImageView style="@style/PayImageStyle"
+                    android:background="@mipmap/mipmap_alipay" />
+
+                <TextView
+                    android:id="@+id/pay_alipay"
+                    style="@style/PayTextStyle"
+                    android:text="@string/payway_alpay" />
+
+                <ImageView
+                    android:id="@+id/pay_alipay_next"
+                    style="@style/PayNextStyle" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:layout_marginLeft="48dp"
+                android:background="@color/colorview"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <ImageView style="@style/PayImageStyle"
+                    android:background="@mipmap/mipmap_weixing" />
+
+                <TextView
+                    android:id="@+id/pay_weixing"
+                    style="@style/PayTextStyle"
+                    android:text="@string/payway_weixing" />
+
+                <ImageView
+                    android:id="@+id/pay_weixing_next"
+                    style="@style/PayNextStyle" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:layout_marginLeft="48dp"
+                android:background="@color/colorview"></View>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/pay_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/visit_nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="200dp"
+        android:background="@mipmap/mipmap_payway_defaul" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ui.widget.MyActionBar
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:id="@+id/visit_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ui.widget.MyActionBar>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/visity_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/visity_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+</RelativeLayout>

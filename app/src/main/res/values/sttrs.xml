@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomCheckBox">
+        <attr name="spacing" format="dimension" />
+        <attr name="ctext" format="reference" />
+        <attr name="ctext_size" format="integer" />
+        <attr name="ctext_color" format="color" />
+        <attr name="checked" format="boolean" />
+        <attr name="src" format="reference" />
+    </declare-styleable>
+</resources>

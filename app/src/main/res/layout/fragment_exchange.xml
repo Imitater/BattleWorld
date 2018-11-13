@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:zsr="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/mipmap_background"
+    xmlns:tl="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="交易所"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <ImageButton
+                android:id="@+id/exchange_search"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/mipmap_search"
+                android:scaleX="0.6"
+                android:scaleY="0.6" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:clipChildren="false"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ui.widget.BannerViewPager
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:clipChildren="false"
+                android:id="@+id/exchange_loop_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                zsr:banner_isloop="true"
+                zsr:banner_looptime="3000"
+                zsr:banner_switchtime="600" />
+
+            <ui.widget.ZoomIndicator
+                android:clipChildren="false"
+                android:id="@+id/exchange_bottom_zoom_arc"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6dp"
+                zsr:zoom_max="1"
+                zsr:zoom_alpha_min="0.5"
+                zsr:zoom_dismiss_open="true"
+                android:orientation="horizontal"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:clickable="true"
+                    android:id="@+id/exchange_image1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="币币交易"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="随时随地掌中交易"
+                        android:textColor="#B3BAC9"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center_vertical"
+                android:background="#18ffffff" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:clickable="true"
+                    android:id="@+id/exchange_image2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="法币交易"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="多种法币多种方式"
+                        android:textColor="#B3BAC9"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:background="@mipmap/ic_launcher" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="BTC市场24小时成交量排行"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/exchange_next"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/mipmap_next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0D2747"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ExchangeListTitleStyle"
+                android:text="市场" />
+
+            <TextView
+                style="@style/ExchangeListTitleStyle"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginLeft="100dp"
+                android:text="最新价"/>
+
+            <TextView
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="10dp"
+                style="@style/ExchangeListTitleStyle"
+                android:text="成交量(BTC)"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/exchange_deal_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/order_flycolayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimary"
+            tl:tl_iconVisible="false"
+            tl:tl_indicator_color="@color/color_tab"
+            tl:tl_textSelectColor="@color/color_tab"
+            tl:tl_textUnselectColor="@color/colorgray"
+            tl:tl_indicator_corner_radius="2dp"
+            tl:tl_indicator_height="2dp"
+            tl:tl_indicator_width="16dp"
+            tl:tl_textsize="16sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0D2747"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ExchangeListTitleStyle"
+                android:text="市场" />
+
+            <TextView
+                style="@style/ExchangeListTitleStyle"
+                android:layout_marginLeft="100dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="最新价"/>
+
+            <TextView
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="10dp"
+                style="@style/ExchangeListTitleStyle"
+                android:text="24h涨跌"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/exchange_gains_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</ScrollView>

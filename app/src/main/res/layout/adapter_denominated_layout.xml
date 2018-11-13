@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:id="@+id/adapter_denominated_item"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/adapter_denominated_title"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:text="测试"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:paddingLeft="16dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/adapter_denominated_right"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_width="25dp"
+            android:background="@mipmap/mipmap_right"
+            android:layout_height="25dp" />
+    </LinearLayout>
+    <View
+        android:id="@+id/adapter_denominated_line"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:background="@color/colorview"/>
+</LinearLayout>

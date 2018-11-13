@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/mipmap_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar"></include>
+
+    <LinearLayout
+        android:id="@+id/card_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_card_shape">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_140"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/card_bank_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="15dp"
+                android:padding="8dp"
+                android:text="测试测试"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/card_card_number_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="— — — —"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/card_user_name_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="21dp"
+                    android:text="持卡人："
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/CardTextStyle"
+                android:padding="15dp"
+                android:text="@string/card_tv" />
+
+            <ui.widget.TextEditTextView
+                android:imeOptions="actionDone"
+                android:id="@+id/card_name"
+                style="@style/CardEditTextStyle"
+                android:hint="@string/card_name_hint" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:background="@color/colorview"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/CardTextStyle"
+                android:padding="15dp"
+                android:text="@string/card_number" />
+
+            <ui.widget.TextEditTextView
+                android:imeOptions="actionDone"
+                android:id="@+id/card_card_number"
+                style="@style/CardEditTextStyle"
+                android:layout_width="0dp"
+                android:layout_marginLeft="40dp"
+                android:layout_weight="1"
+                android:hint="@string/card_number_hint"
+                android:inputType="number"
+                android:maxLength="26"
+                android:singleLine="true" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp"
+                android:background="@mipmap/mipmap_scanning"
+                android:scaleX="0.9"
+                android:scaleY="0.9" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:background="@color/colorview"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/CardTextStyle"
+                android:padding="15dp"
+                android:text="@string/card_bank" />
+
+            <ui.widget.TextEditTextView
+                android:imeOptions="actionDone"
+                android:id="@+id/card_bank"
+                style="@style/CardEditTextStyle"
+                android:layout_marginLeft="8dp"
+                android:hint="@string/card_bank_hint" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:background="@color/colorview"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/CardTextStyle"
+                android:padding="15dp"
+                android:text="@string/card_address" />
+
+            <ui.widget.TextEditTextView
+                android:imeOptions="actionDone"
+                android:id="@+id/card_pank_another"
+                style="@style/CardEditTextStyle"
+                android:layout_marginLeft="8dp"
+                android:hint="@string/card_address_et" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/card_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorEditHint"
+        android:text="@string/card_finish"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+</LinearLayout>

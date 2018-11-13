@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/mipmap_background">
+  <LinearLayout
+      android:paddingTop="25dp"
+      android:background="@color/colorUserInfo"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <Button
+          android:id="@+id/back"
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="8dp"
+          android:background="@mipmap/mipmap_back"
+          android:scaleX="0.5"
+          android:scaleY="0.5" />
+  </LinearLayout>
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:background="@color/colorUserInfo"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/head"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+            <ImageView
+                android:background="@drawable/circle_shape_select"
+                android:layout_width="39dp"
+                android:layout_height="39dp" />
+            <TextView
+                android:id="@+id/userinfo_head_text"
+                android:layout_centerInParent="true"
+                android:text="测"
+                android:textSize="16sp"
+                android:textColor="@color/write"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/userinfo_circle"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/head_selector"
+                android:layout_width="6dp"
+                android:layout_height="6dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/userinfo_username"
+                android:layout_marginLeft="9dp"
+                android:textSize="18sp"
+                android:textColor="@color/write"
+                android:text="测试"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="9dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/userinfo_certification"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorTitleText"
+                android:text="高级认证"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/colortvmore"
+                android:layout_width="1dp"
+                android:layout_height="11dp"></View>
+                <TextView
+                    android:id="@+id/userinfo_time"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorTitleText"
+                    android:text="注册时间 2018-08-09"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:paddingTop="27dp"
+        android:background="@color/colorUserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/userinfo_deal_count"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/colorTitleText"
+                android:textSize="16sp"
+                android:text="6717次"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorEditHint"
+                android:text="总成单"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:id="@+id/userinfo_complaint_count"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/colorTitleText"
+                android:textSize="16sp"
+                android:text="13次"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorEditHint"
+                android:text="申诉"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/userinfo_30_count"
+                android:textColor="@color/colorTitleText"
+                android:textSize="16sp"
+                android:text="885次"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/colorEditHint"
+                android:text="30日成单"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:id="@+id/userinfo_win_count"
+                android:textColor="@color/colorTitleText"
+                android:textSize="16sp"
+                android:text="13次"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginBottom="12dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorEditHint"
+                android:text="胜诉"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="right"
+                android:layout_marginRight="16dp"
+                android:id="@+id/userinfo_completion_rate"
+                android:textColor="@color/colorTitleText"
+                android:textSize="16sp"
+                android:text="98%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_gravity="right"
+                android:layout_marginRight="16dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorEditHint"
+                android:text="完成率"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/userinfo_avg"
+                android:layout_gravity="right"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/colorTitleText"
+                android:textSize="16sp"
+                android:text="2.43分钟"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_gravity="right"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="12dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorEditHint"
+                android:text="平均放行"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:background="@color/colorUserInfo"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/userinfo_phone"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/colorEditHint"
+                android:text="手机认证"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/mipmap_info_right"
+                android:layout_width="16dp"
+                android:layout_height="16dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/userinfo_email"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/colorEditHint"
+                android:text="邮箱认证"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/mipmap_info_right"
+                android:layout_width="16dp"
+                android:layout_height="16dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/userinfo_identity"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/colorEditHint"
+                android:text="身份认证"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/mipmap_info_right"
+                android:layout_width="16dp"
+                android:layout_height="16dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:id="@+id/userinfo_high"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/colorEditHint"
+                android:text="高级认证"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/mipmap_info_right"
+                android:layout_width="16dp"
+                android:layout_height="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/userinfo_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/mipmap_background">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/fiat_drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+        <LinearLayout
+            android:background="@color/colorPrimaryDark"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <View
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"></View>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="@color/colorPrimaryDark">
+
+                    <Button
+                        android:id="@+id/fiat_back"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:background="@mipmap/mipmap_back"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/fiat_buy"
+                            style="@style/FiatDealTitleStyle"
+                            android:text="购买" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:background="@drawable/fait_rectangle_shape" />
+
+                        <RadioButton
+                            android:id="@+id/fiat_sell"
+                            style="@style/FiatDealTitleStyle"
+                            android:text="出售" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:background="@drawable/fait_rectangle_shape" />
+
+                        <RadioButton
+                            android:id="@+id/fiat_deal"
+                            style="@style/FiatDealTitleStyle"
+                            android:text="交易单" />
+                    </RadioGroup>
+
+                    <ImageButton
+                        android:id="@+id/fiat_order"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="50dp"
+                        android:background="@mipmap/mipmap_orderlist" />
+
+                    <ImageButton
+                        android:id="@+id/fiat_screening"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:background="@mipmap/mipmap_screening" />
+                </RelativeLayout>
+
+                <com.flyco.tablayout.CommonTabLayout
+                    android:id="@+id/fiat_flycolayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/colorPrimaryDark"
+                    tl:tl_iconVisible="false"
+                    tl:tl_indicator_color="@color/color_tab"
+                    tl:tl_indicator_corner_radius="2dp"
+                    tl:tl_indicator_height="2dp"
+                    tl:tl_indicator_width="16dp"
+                    tl:tl_textSelectColor="@color/color_tab"
+                    tl:tl_textUnselectColor="@color/colorgray"
+                    tl:tl_textsize="16sp" />
+        </LinearLayout>
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/fiat_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+            </LinearLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fiat_floatbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="50dp"
+                android:layout_marginRight="16dp"
+                android:backgroundTint="#8dedebf2"
+                android:clickable="true"
+                android:elevation="8dp"
+                android:scaleType="centerInside"
+                app:borderWidth="0dp"
+                android:src="@mipmap/mipmap_add_float"
+                app:fabSize="auto" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fiat_framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="#FF081A36"
+            android:elevation="1dp">
+
+            <include layout="@layout/menu_right" />
+        </FrameLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

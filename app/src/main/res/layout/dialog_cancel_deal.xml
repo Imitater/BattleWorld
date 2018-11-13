@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+    <TextView
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textColor="#0A1F37"
+        android:text="确认取消交易"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="#8e0a1f37"
+        android:text="如果您已经向卖家付款"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:gravity="center_horizontal"
+        android:textColor="#8e0a1f37"
+        android:text="请千万不要取消交易！"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorEditHint"
+        android:layout_gravity="center_horizontal"
+        android:text="取消规则：买家当日累计3笔取消，会限制当日买入功能"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:background="#8d0a1f37"
+        ></View>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/dialog_deal_cancel"
+            android:textSize="16sp"
+            android:text="我再想想"
+            android:textColor="#B3BAC9"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+        <View
+            android:background="#8d0a1f37"
+            android:layout_width="0.25dp"
+            android:layout_height="50dp"></View>
+        <Button
+            android:id="@+id/dialog_deal_finish"
+            android:textColor="@color/colorButtomTab"
+            android:text="@string/dialog_finish"
+            android:textSize="16sp"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7A061333</color>
+    <color name="colorPrimaryDark">#FF0A2037</color>
+    <color name="colorAccent">#133456</color>
+    <color name="colorButtomTabPress">#FF822C</color>
+    <color name="colorButtomTab">#04C5FC</color>
+    <color name="colorTitleText">#DFE2E6</color>
+    <color name="colorText">#04C5FC</color>
+    <color name="colorUser">#0A1F37</color>
+    <color name="colorUserlight">#ab0a1f37</color>
+    <color name="colorEditHint">#B3BAC9</color>
+    <color name="colorFinishButton">#B3BAC9</color>
+    <color name="colorItemDelete">#FF2798</color>
+    <color name="colorItemEdit">#04C5FC</color>
+    <color name="colorItemDefaul">#B3BAC9</color>
+    <color name="colorSafeText">#DCDFE4</color>
+    <color name="colorSwitchBackOff">#A0A8B5</color>
+    <color name="colorSwitchBackOn">#4CD964</color>
+    <color name="colorview">#64ffffff</color>
+    <color name="colorgray">#e7ffffff</color>
+    <color name="color_tab">#04C5FC</color>
+    <color name="colorsell">#FF2798</color>
+    <color name="colorbuy">#1ADAD1</color>
+    <color name="colortvshallow">#deffffff</color>
+    <color name="colortvmore">#83ffffff</color>
+    <color name="write">#ffffff</color>
+    <color name="colordealtype">#FF0B1F3F</color>
+    <color name="colorUserInfo">#FF0B2243</color>
+    <color name="colorOrderText">#930a1f37</color>
+    <color name="colorOrderMText">#eb0a1f37</color>
+    <color name="colorBlack">#000000</color>
+
+
+
+
+
+</resources>

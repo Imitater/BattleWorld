@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/adapter_item"
+    android:background="?android:attr/selectableItemBackground"
+    >
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/adapter_lable"
+        android:background="@mipmap/ic_launcher"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp" />
+    <TextView
+        android:id="@+id/adapter_title"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="13dp"
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/adapter_lable"
+        android:textColor="@color/colorTitleText"
+        android:text="测试"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageButton
+        android:id="@+id/adapter_next"
+        android:scaleY="0.6"
+        android:scaleX="0.6"
+        android:background="@mipmap/mipmap_next"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <View
+        android:layout_marginLeft="51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:background="@color/colorview"></View>
+</RelativeLayout>

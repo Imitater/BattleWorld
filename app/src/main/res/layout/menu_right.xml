@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        style="@style/RightMenuTitleStyle"
+        android:text="商家类型" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/menu_business_type_all"
+            style="@style/RightMenuButtonStyle"
+            android:layout_height="33dp"
+            android:layout_width="83dp"
+            android:text="全部" />
+        <Button
+            android:id="@+id/menu_business_type_high"
+            android:layout_height="33dp"
+            android:layout_width="83dp"
+            style="@style/RightMenuButtonStyle"
+            android:text="高级认证" />
+    </LinearLayout>
+    <TextView
+        style="@style/RightMenuTitleStyle"
+        android:text="交易金额" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/menu_money_all"
+            android:layout_height="33dp"
+            android:layout_width="83dp"
+            style="@style/RightMenuButtonStyle"
+            android:text="全部" />
+        <Button
+            android:id="@+id/menu_money_five"
+            style="@style/RightMenuButtonStyle"
+            android:layout_height="33dp"
+            android:layout_width="83dp"
+            android:text="5万以上" />
+        <Button
+            android:id="@+id/menu_money_ten"
+            android:layout_height="33dp"
+            android:layout_width="83dp"
+            style="@style/RightMenuButtonStyle"
+            android:text="10万以上" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/menu_money_twenty"
+            style="@style/RightMenuButtonStyle"
+            android:layout_height="33dp"
+            android:layout_width="83dp"
+            android:text="20万以上" />
+    </LinearLayout>
+    <TextView
+        style="@style/RightMenuTitleStyle"
+        android:text="支付方式" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/menu_pay_all"
+            android:layout_height="33dp"
+            android:layout_width="83dp"
+            style="@style/RightMenuButtonStyle"
+            android:text="全部" />
+        <Button
+            android:id="@+id/menu_pay_card"
+            style="@style/RightMenuButtonStyle"
+            android:layout_height="33dp"
+            android:layout_width="83dp"
+            android:text="银行卡" />
+        <Button
+            android:id="@+id/menu_pay_alipay"
+            style="@style/RightMenuButtonStyle"
+            android:layout_height="33dp"
+            android:layout_width="83dp"
+            android:text="支付宝" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/menu_pay_weixing"
+            android:layout_width="83dp"
+            android:layout_height="33dp"
+            style="@style/RightMenuButtonStyle"
+            android:text="微信" />
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/menu_reset"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorgray"
+            android:textColor="#ffffff"
+            android:text="重置"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/menu_screening"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:background="@color/color_tab"
+            android:textColor="#ffffff"
+            android:text="筛选"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

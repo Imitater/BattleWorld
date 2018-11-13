@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+        <RelativeLayout
+            android:id="@+id/adapter_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/head"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_width="26dp"
+            android:layout_height="26dp">
+            <ImageView
+                android:id="@+id/adapter_head"
+                android:background="@drawable/circle_shape_select"
+                android:layout_width="25dp"
+                android:layout_height="25dp" />
+            <TextView
+                android:id="@+id/adapter_head_text"
+                android:layout_centerInParent="true"
+                android:text="测"
+                android:textSize="16sp"
+                android:textColor="@color/write"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/adapter_circle"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/head_selector"
+                android:layout_width="6dp"
+                android:layout_height="6dp" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/adapter_name"
+            android:layout_marginLeft="7dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/head"
+            android:textColor="@color/write"
+            android:textSize="16sp"
+            android:text="测试"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/adapter_money"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_tab"
+            android:textStyle="normal"
+            android:textSize="20sp"
+            android:text="¥47,918.00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="19dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="12sp"
+            android:textColor="@color/colorEditHint"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/adapter_rate"
+            android:text="已交易572/成交率80%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/adapter_count"
+            android:textSize="12sp"
+            android:textColor="@color/colorEditHint"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:text="数量 5.600000 BTC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/adapter_image1"
+                android:background="@mipmap/mipmap_card"
+                android:layout_width="16dp"
+                android:layout_height="16dp" />
+            <ImageView
+                android:id="@+id/adapter_image2"
+                android:layout_marginLeft="5dp"
+                android:background="@mipmap/mipmap_alipay"
+                android:layout_width="16dp"
+                android:layout_height="16dp" />
+            <ImageView
+                android:id="@+id/adapter_image3"
+                android:layout_marginLeft="5dp"
+                android:background="@mipmap/mipmap_weixing"
+                android:layout_width="16dp"
+                android:layout_height="16dp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/adapter_limit"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorEditHint"
+            android:textSize="12sp"
+            android:text="限额 ¥18,888.00-¥363,660.00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

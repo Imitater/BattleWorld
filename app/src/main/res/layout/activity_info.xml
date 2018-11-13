@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ui.widget.MyActionBar
+        android:id="@+id/info_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"></ui.widget.MyActionBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:elevation="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:focusable="true">
+
+                <TextView
+                    style="@style/UserInfoTextStyle"
+                    android:text="@string/info_head" />
+
+                <ImageButton
+                    android:id="@+id/info_head_next"
+                    style="@style/UserInfoImageStyle" />
+
+                <ImageView
+                    android:id="@+id/info_head"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@id/info_head_next"
+                    android:background="@mipmap/ic_launcher"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:layout_marginLeft="16dp"
+            android:background="@color/colorview" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:elevation="2dp">
+
+            <RelativeLayout
+                android:id="@+id/info_name_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:focusable="true">
+
+                <TextView
+                    style="@style/UserInfoTextStyle"
+                    android:text="@string/info_nickname" />
+
+                <ImageButton
+                    android:id="@+id/info_name_next"
+                    style="@style/UserInfoImageStyle" />
+
+                <TextView
+                    style="@style/UserInfoTextStyle"
+                    android:layout_toLeftOf="@id/info_name_next"
+                    android:text="测试" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:layout_marginLeft="16dp"
+            android:background="@color/colorview" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:elevation="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:focusable="true">
+
+                <TextView
+                    style="@style/UserInfoTextStyle"
+                    android:text="@string/info_number" />
+
+                <TextView
+                    style="@style/UserInfoTextStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:text="sammay1020" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:layout_marginLeft="16dp"
+            android:background="@color/colorview" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:elevation="2dp">
+
+            <RelativeLayout
+                android:id="@+id/info_sex_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:focusable="true">
+
+                <TextView
+                    style="@style/UserInfoTextStyle"
+                    android:text="@string/info_sex" />
+
+                <ImageButton
+                    android:id="@+id/info_sex_next"
+                    style="@style/UserInfoImageStyle" />
+                <TextView
+                    style="@style/UserInfoTextStyle"
+                    android:layout_toLeftOf="@id/info_sex_next"
+                    android:text="女" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:layout_marginLeft="16dp"
+            android:background="@color/colorview" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:elevation="2dp">
+
+            <RelativeLayout
+                android:id="@+id/info_personality_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:focusable="true">
+
+                <TextView
+                    style="@style/UserInfoTextStyle"
+                    android:text="@string/info_personality" />
+
+                <ImageButton
+                    android:id="@+id/info_personality_next"
+                    style="@style/UserInfoImageStyle" />
+
+                <TextView
+                    style="@style/UserInfoTextStyle"
+                    android:layout_marginLeft="100dp"
+                    android:layout_toLeftOf="@id/info_personality_next"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:singleLine="true"
+                    android:text="万事如意" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:layout_marginLeft="16dp"
+            android:background="@color/colorview" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:elevation="2dp">
+
+            <RelativeLayout
+                android:id="@+id/info_code_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:focusable="true">
+
+                <TextView
+                    style="@style/UserInfoTextStyle"
+                    android:text="@string/info_code" />
+
+                <ImageButton
+                    android:id="@+id/info_code_next"
+                    style="@style/UserInfoImageStyle" />
+
+                <ImageView
+                    android:id="@+id/info_code"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@id/info_code_next"
+                    android:background="@mipmap/mipmap_code" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:elevation="2dp">
+
+            <RelativeLayout
+                android:id="@+id/info_address_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:focusable="true">
+
+                <TextView
+                    style="@style/UserInfoTextStyle"
+                    android:text="@string/info_address" />
+
+                <ImageButton
+                    android:id="@+id/info_address_next"
+                    style="@style/UserInfoImageStyle" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

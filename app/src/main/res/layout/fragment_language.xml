@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rgb="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/mipmap_background">
+    <include layout="@layout/actionbar"/>
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <ui.widget.CustomCheckBox
+              rgb:ctext_color="@color/colorTitleText"
+              android:id="@+id/language_chinese"
+              android:clickable="true"
+              android:focusable="true"
+              android:padding="16dp"
+              rgb:ctext_size="16"
+              rgb:ctext= "@string/language_chinese"
+              rgb:spacing= "11dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"></ui.widget.CustomCheckBox>
+            <View
+                android:layout_marginLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:background="@color/colorview"></View>
+            <ui.widget.CustomCheckBox
+                rgb:ctext_color="@color/colorTitleText"
+                android:id="@+id/language_traditional"
+                android:clickable="true"
+                android:focusable="true"
+                rgb:ctext_size="16"
+                android:padding="16dp"
+                rgb:ctext= "@string/language_traditional"
+                rgb:spacing= "11dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ui.widget.CustomCheckBox>
+            <View
+                android:layout_marginLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:background="@color/colorview"></View>
+            <ui.widget.CustomCheckBox
+                android:id="@+id/language_english"
+                android:clickable="true"
+                android:focusable="true"
+                rgb:ctext_size="16"
+                rgb:ctext_color="@color/colorTitleText"
+                android:padding="16dp"
+                rgb:ctext= "@string/language_english"
+                rgb:spacing= "11dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ui.widget.CustomCheckBox>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

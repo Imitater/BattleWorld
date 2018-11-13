@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ui.widget.MyActionBar
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:id="@+id/nedit_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ui.widget.MyActionBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/nedit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="16dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="测试"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/nedit_clear"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/mipmap_change"
+            android:scaleX="0.5"
+            android:scaleY="0.5" />
+
+
+        <ui.widget.TextEditTextView
+            android:id="@+id/nedit_rename"
+            android:imeOptions="actionDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="测试"
+            android:background="@color/colorPrimary"
+            android:singleLine="true"
+            android:focusable="true"
+            android:paddingLeft="16dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/write"
+            android:textColorHint="@color/colorEditHint"
+            android:visibility="gone"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+</LinearLayout>

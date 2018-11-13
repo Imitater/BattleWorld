@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+    <TextView
+        android:background="@color/colorPrimary"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:paddingLeft="16dp"
+        android:textSize="18sp"
+        android:textColor="@color/write"
+        android:text="在线出售"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/adapter_item"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:paddingTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:background="@mipmap/ic_launcher"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/write"
+                android:textSize="18sp"
+                android:text="BTC"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginRight="14dp"
+                android:textSize="20sp"
+                android:textColor="@color/color_tab"
+                android:text="¥47,850.00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/colorEditHint"
+                android:textSize="12sp"
+                android:layout_marginLeft="16dp"
+                android:text="已交易572/成交率80%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/colorEditHint"
+                android:textSize="12sp"
+                android:layout_marginRight="14dp"
+                android:layout_alignParentRight="true"
+                android:text="数量 5.600000 BTC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="16dp"
+                    android:background="@mipmap/mipmap_card"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp" />
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:background="@mipmap/mipmap_alipay"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp" />
+                <ImageView
+                    android:layout_marginLeft="5dp"
+                    android:background="@mipmap/mipmap_weixing"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginRight="14dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorEditHint"
+                android:textSize="12sp"
+                android:text="限额 ¥18,888.00-¥363,660.00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

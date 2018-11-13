@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arr_price">
+        <item>固定价格</item>
+        <item>固定价格</item>
+    </string-array>
+</resources>

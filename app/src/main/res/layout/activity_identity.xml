@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ui.widget.MyActionBar
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:id="@+id/identity_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ui.widget.MyActionBar>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/identity_primary"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/PrimaryTextStyle"
+                android:text="@string/identity_common" />
+            <TextView
+                android:id="@+id/identity_primary_tv"
+                android:textColor="#27D6FF"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:text="去完成实名认证" />
+            <ImageButton
+                android:id="@+id/identity_primary_bt"
+             style="@style/IdentityButtonStyle"/>
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:background="@color/colorview"></View>
+        <LinearLayout
+            android:id="@+id/identity_intermediate"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/PrimaryTextStyle"
+                android:text="@string/identity_intermediate" />
+            <TextView
+                android:layout_marginRight="16dp"
+                android:id="@+id/identity_intermediate_tv"
+                android:textColor="@color/colorEditHint"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:text="请先完成上一级认证" />
+            <ImageButton
+                android:id="@+id/identity_intermediate_bt"
+                android:visibility="gone"
+                style="@style/IdentityButtonStyle" />
+        </LinearLayout>
+        <View
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:background="@color/colorview"></View>
+        <LinearLayout
+            android:id="@+id/identity_high"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/PrimaryTextStyle"
+                android:text="@string/identity_high" />
+            <TextView
+                android:layout_marginRight="16dp"
+                android:id="@+id/identity_high_tv"
+                android:textColor="@color/colorEditHint"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:text="请先完成上一级认证" />
+            <ImageButton
+                android:visibility="gone"
+                style="@style/IdentityButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/identity_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</RelativeLayout>

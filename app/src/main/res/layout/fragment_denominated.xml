@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/mipmap_background">
+    <include layout="@layout/actionbar"/>
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ui.widget.CustomCheckBox
+        android:id="@+id/denominated_checkbox1"
+        app:ctext_size="16"
+        app:ctext_color="@color/colorTitleText"
+        style="@style/DenominatedCheckBoxStyle"
+        app:ctext="@string/denominated_china"></ui.widget.CustomCheckBox>
+        <View style="@style/DenominatedLineStyle"/>
+    <ui.widget.CustomCheckBox
+        app:ctext_color="@color/colorTitleText"
+        android:id="@+id/denominated_checkbox2"
+        app:ctext_size="16"
+        style="@style/DenominatedCheckBoxStyle"
+        app:ctext="@string/denominated_usa"
+       ></ui.widget.CustomCheckBox>
+        <View style="@style/DenominatedLineStyle"/>
+    <ui.widget.CustomCheckBox
+        app:ctext_color="@color/colorTitleText"
+        android:id="@+id/denominated_checkbox3"
+        app:ctext_size="16"
+        style="@style/DenominatedCheckBoxStyle"
+        app:ctext="@string/denominated_korea"></ui.widget.CustomCheckBox>
+        <View style="@style/DenominatedLineStyle"/>
+    <ui.widget.CustomCheckBox
+        app:ctext_color="@color/colorTitleText"
+        android:id="@+id/denominated_checkbox4"
+        app:ctext_size="16"
+        style="@style/DenominatedCheckBoxStyle"
+        app:ctext="@string/denominated_japan"></ui.widget.CustomCheckBox>
+        <View style="@style/DenominatedLineStyle"/>
+    <ui.widget.CustomCheckBox
+        app:ctext_color="@color/colorTitleText"
+        android:id="@+id/denominated_checkbox5"
+        app:ctext_size="16"
+        style="@style/DenominatedCheckBoxStyle"
+        app:ctext="@string/denominated_europe"></ui.widget.CustomCheckBox>
+        <View style="@style/DenominatedLineStyle"/>
+    <ui.widget.CustomCheckBox
+        app:ctext_color="@color/colorTitleText"
+        android:id="@+id/denominated_checkbox6"
+        app:ctext_size="16"
+        style="@style/DenominatedCheckBoxStyle"
+        app:ctext="@string/denominated_ruble"></ui.widget.CustomCheckBox>
+        <View style="@style/DenominatedLineStyle"/>
+    <ui.widget.CustomCheckBox
+        app:ctext_color="@color/colorTitleText"
+        android:id="@+id/denominated_checkbox7"
+        app:ctext_size="16"
+        style="@style/DenominatedCheckBoxStyle"
+        app:ctext="@string/denominated_pound"></ui.widget.CustomCheckBox>
+    </LinearLayout>
+</LinearLayout>

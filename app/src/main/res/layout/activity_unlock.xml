@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginTop="25dp"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="16dp"
+            android:textStyle="normal"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:text="设置手势密码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button1"
+                android:background="@drawable/circle_shape"
+                android:layout_width="4dp"
+                android:layout_height="4dp" />
+            <Button
+                android:layout_marginLeft="8dp"
+                android:id="@+id/button2"
+                android:background="@drawable/circle_shape"
+                android:layout_width="4dp"
+                android:layout_height="4dp" />
+            <Button
+                android:layout_marginLeft="8dp"
+                android:id="@+id/button3"
+                android:background="@drawable/circle_shape"
+                android:layout_width="4dp"
+                android:layout_height="4dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button4"
+                android:background="@drawable/circle_shape"
+                android:layout_width="4dp"
+                android:layout_height="4dp" />
+            <Button
+                android:layout_marginLeft="8dp"
+                android:id="@+id/button5"
+                android:background="@drawable/circle_shape"
+                android:layout_width="4dp"
+                android:layout_height="4dp" />
+            <Button
+                android:layout_marginLeft="8dp"
+                android:id="@+id/button6"
+                android:background="@drawable/circle_shape"
+                android:layout_width="4dp"
+                android:layout_height="4dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button7"
+                android:background="@drawable/circle_shape"
+                android:layout_width="4dp"
+                android:layout_height="4dp" />
+            <Button
+                android:layout_marginLeft="8dp"
+                android:id="@+id/button8"
+                android:background="@drawable/circle_shape"
+                android:layout_width="4dp"
+                android:layout_height="4dp" />
+            <Button
+                android:layout_marginLeft="8dp"
+                android:id="@+id/button9"
+                android:background="@drawable/circle_shape"
+                android:layout_width="4dp"
+                android:layout_height="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/show"
+        android:textColor="#8bffffff"
+        android:layout_marginBottom="20dp"
+        android:textSize="14sp"
+        android:text="请设置手势密码，至少连接5个点"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ui.UnlockView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/unlock"
+        android:layout_width="275dp"
+        android:layout_height="275dp" />
+    <TextView
+        android:gravity="center_horizontal"
+        android:textColor="#8bffffff"
+        android:layout_marginTop="30dp"
+        android:textSize="14sp"
+        android:text="暂不设置"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

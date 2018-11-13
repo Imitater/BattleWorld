@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/dialog_card"
+        style="@style/alertDialogTextStyle"
+        android:text="民生银行(8890)" />
+
+    <TextView
+        android:layout_marginTop="1dp"
+        android:id="@+id/dialog_alipay"
+        style="@style/alertDialogTextStyle"
+        android:text="支付宝" />
+    <TextView
+        android:layout_marginTop="1dp"
+        android:id="@+id/dialog_weixing"
+        style="@style/alertDialogTextStyle"
+        android:text="微信钱包" />
+
+    <TextView
+        android:textColor="@color/colorText"
+        android:layout_marginTop="10dp"
+        android:id="@+id/dialog_close"
+        style="@style/alertDialogTextStyle"
+        android:text="取消" />
+</LinearLayout>

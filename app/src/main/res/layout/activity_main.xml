@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ui.activity.MainActivity">
+
+    <ui.widget.CustomViewPager
+        android:id="@+id/main_vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"/>
+    <FrameLayout
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        >
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/main_social"
+                style="@style/LinearLayoutStyle1">
+                <ImageView
+                    android:background="@mipmap/ic_launcher"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:id="@+id/main_tv_social"
+                    style="@style/TextViewStyle1"
+                    android:text="@string/name_social" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/main_transaction"
+                style="@style/LinearLayoutStyle1">
+                <ImageView
+                    android:background="@mipmap/ic_launcher"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:id="@+id/main_tv_transaction"
+                    style="@style/TextViewStyle1"
+                    android:text="@string/name_transaction"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/main_game"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@mipmap/ic_launcher"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+                <TextView
+                    android:id="@+id/main_tv_game"
+                    style="@style/TextViewStyle1"
+                    android:text="@string/name_game"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/main_money"
+                style="@style/LinearLayoutStyle1">
+                <ImageView
+                    android:background="@mipmap/ic_launcher"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:id="@+id/main_tv_money"
+                    style="@style/TextViewStyle1"
+                    android:text="@string/name_money" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/main_my"
+                style="@style/LinearLayoutStyle1">
+                <ImageView
+                    android:background="@mipmap/ic_launcher"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:id="@+id/main_tv_my"
+                    style="@style/TextViewStyle1"
+                    android:text="@string/name_my"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
